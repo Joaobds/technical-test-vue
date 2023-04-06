@@ -22,12 +22,12 @@
         </div>
     </div>
     <div class="row" style="margin-top: 30px; z-index: 10;">
-          <p style="text-align: start;"><b>2. Calculando soma dos valores ímpares de um input.</b></p>
+      <p style="text-align: start;"><b>2. Calculando soma dos valores ímpares de um input.</b></p>
     </div>
     <div class="row" style="margin-top: 10px;">
       <div class="col-md-5"  style="z-index: 10;">
         <div class="form-group">
-            <input id="number" class="form-field" type="text" placeholder="Digite o Valor" @keypress="isNumber($event)">
+          <input id="number" class="form-field" type="text" placeholder="Digite o Valor" @keypress="isNumber($event)">
         </div>
       </div>
       <div class="col-md-1" style="z-index: 10;">
@@ -125,7 +125,6 @@ export default {
       let url = 'https://restcountries.com/v3.1/all';
       axios.get(url).then(response =>{
         this.countries = response.data;
-        console.log(response.data);
       })
     },
     sumOddNumbers: function() {
